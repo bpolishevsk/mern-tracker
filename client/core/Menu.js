@@ -10,8 +10,11 @@ import auth from './../auth/auth-helper'
 import {Link, withRouter} from 'react-router-dom'
 
 const isActive = (history, path) => {
-  if (history.location.pathname == path)
+  if (history.location.pathname == path){
+    console.log("@@@")
     return {color: '#69f0ae'}
+  }
+
   else
     return {color: '#ffffff'}
 }
